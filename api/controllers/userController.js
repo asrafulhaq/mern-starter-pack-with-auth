@@ -173,7 +173,9 @@ export const getAllUser = async (req, res, next) => {
 
     try {        
         const user = await User.create({ ...req.body, password : hash_pass });
-        res.status(200).json(user);
+        res.status(200).json({
+            message  : "user register successful"
+        });
 
     } catch (error) {
         next(error);

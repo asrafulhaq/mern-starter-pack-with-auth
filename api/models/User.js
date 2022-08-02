@@ -11,28 +11,9 @@ const userSchema = mongoose.Schema({
     },
     email : {
         type : String,
-        required : true,
+        required : true, 
         trim : true,
         unique : true
-    },
-    cell : {
-        type : String,
-        required : true,
-        trim : true,
-        unique : true
-    },
-    username : {
-        type : String,
-        required : true,
-        trim : true,
-        unique : true
-    },
-    age : {
-        type : Number,
-        required : true
-    },
-    gender : {
-        type : String
     },
     password : {
         type : String,
@@ -41,7 +22,7 @@ const userSchema = mongoose.Schema({
     },
     photo : {
         type : String,
-    },
+    }, 
     isAdmin : {
         type : Boolean,
         default : false
